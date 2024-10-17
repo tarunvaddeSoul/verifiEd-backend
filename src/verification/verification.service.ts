@@ -151,7 +151,7 @@ export class VerificationService {
 
       const credentialDefinition =
         await this.issuanceService.getCredentialDefinitionByTag(
-          'PHC Credential V2',
+          `${process.env.PHC_CREDENTIAL_DEFINITION_TAG}`,
         );
       const indyCredDefId = parseIndyCredentialDefinitionId(
         credentialDefinition.credentialDefinitionId,
@@ -256,8 +256,7 @@ export class VerificationService {
                 name: 'Marks Scored',
                 restrictions: [
                   {
-                    cred_def_id:
-                      'JM9L6HL2QCexjbn9WB46h9:3:CL:2286400:Introduction to SSI V2',
+                    cred_def_id: `${process.env.ITS_CREDENTIAL_DEFINITION_ID}`,
                   },
                 ],
               },
@@ -265,8 +264,7 @@ export class VerificationService {
                 name: 'Marks Scored',
                 restrictions: [
                   {
-                    cred_def_id:
-                      'JM9L6HL2QCexjbn9WB46h9:3:CL:2286411:Digital Identity Fundamentals V2',
+                    cred_def_id: `${process.env.DIF_CREDENTIAL_DEFINITION_ID}`,
                   },
                 ],
               },
@@ -274,8 +272,7 @@ export class VerificationService {
                 name: 'Marks Scored',
                 restrictions: [
                   {
-                    cred_def_id:
-                      'JM9L6HL2QCexjbn9WB46h9:3:CL:2286422:Blockchain and SSI V2',
+                    cred_def_id: `${process.env.BAS_CREDENTIAL_DEFINITION_ID}`,
                   },
                 ],
               },
@@ -283,8 +280,7 @@ export class VerificationService {
                 name: 'Marks Scored',
                 restrictions: [
                   {
-                    cred_def_id:
-                      'JM9L6HL2QCexjbn9WB46h9:3:CL:2286427:Privacy and Security in SSI V2',
+                    cred_def_id: `${process.env.PSS_CREDENTIAL_DEFINITION_ID}`,
                   },
                 ],
               },
@@ -292,8 +288,7 @@ export class VerificationService {
                 name: 'Marks Scored',
                 restrictions: [
                   {
-                    cred_def_id:
-                      'JM9L6HL2QCexjbn9WB46h9:3:CL:2286438:Implementing SSI Solutions V2',
+                    cred_def_id: `${process.env.ISS_CREDENTIAL_DEFINITION_ID}`,
                   },
                 ],
               },
@@ -330,8 +325,7 @@ export class VerificationService {
                 names: ['Course Name', 'Timestamp'],
                 restrictions: [
                   {
-                    cred_def_id:
-                      'JM9L6HL2QCexjbn9WB46h9:3:CL:2286400:Introduction to SSI V2',
+                    cred_def_id: `${process.env.ITS_CREDENTIAL_DEFINITION_ID}`,
                   },
                 ],
               },
@@ -339,8 +333,7 @@ export class VerificationService {
                 names: ['Course Name', 'Timestamp'],
                 restrictions: [
                   {
-                    cred_def_id:
-                      'JM9L6HL2QCexjbn9WB46h9:3:CL:2286411:Digital Identity Fundamentals V2',
+                    cred_def_id: `${process.env.DIF_CREDENTIAL_DEFINITION_ID}`,
                   },
                 ],
               },
@@ -348,8 +341,7 @@ export class VerificationService {
                 names: ['Course Name', 'Timestamp'],
                 restrictions: [
                   {
-                    cred_def_id:
-                      'JM9L6HL2QCexjbn9WB46h9:3:CL:2286422:Blockchain and SSI V2',
+                    cred_def_id: `${process.env.BAS_CREDENTIAL_DEFINITION_ID}`,
                   },
                 ],
               },
@@ -357,8 +349,7 @@ export class VerificationService {
                 names: ['Course Name', 'Timestamp'],
                 restrictions: [
                   {
-                    cred_def_id:
-                      'JM9L6HL2QCexjbn9WB46h9:3:CL:2286427:Privacy and Security in SSI V2',
+                    cred_def_id: `${process.env.PSS_CREDENTIAL_DEFINITION_ID}`,
                   },
                 ],
               },
@@ -366,8 +357,7 @@ export class VerificationService {
                 names: ['Course Name', 'Timestamp'],
                 restrictions: [
                   {
-                    cred_def_id:
-                      'JM9L6HL2QCexjbn9WB46h9:3:CL:2286438:Implementing SSI Solutions V2',
+                    cred_def_id: `${process.env.ISS_CREDENTIAL_DEFINITION_ID}`,
                   },
                 ],
               },

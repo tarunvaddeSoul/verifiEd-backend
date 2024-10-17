@@ -1,0 +1,65 @@
+[
+  {
+    "schema": {
+      "issuerId": "did:indy:bcovrin:testnet:JM9L6HL2QCexjbn9WB46h9",
+      "name": "PHC Credential",
+      "version": "1.0",
+      "attrNames": ["Name", "Issued By", "Expiry"]
+    }
+  },
+  {
+    "autoAcceptProof": "always",
+    "comment": "string",
+    "willConfirm": true,
+    "protocolVersion": "v2",
+    "proofFormats": {
+      "anoncreds": {
+        "name": "Requesting Marks",
+        "version": "1.0",
+        "requested_attributes": {
+          "Requesting Marks of Module 1": {
+            "name": "Marks Scored",
+            "restrictions": [
+              {
+                "cred_def_id": "JM9L6HL2QCexjbn9WB46h9:3:CL:2264778:Introduction to SSI"
+              }
+            ]
+          },
+          "Requesting Marks of Module 2": {
+            "name": "Marks Scored",
+            "restrictions": [
+              {
+                "cred_def_id": "JM9L6HL2QCexjbn9WB46h9:3:CL:2264791:Digital Identity Fundamentals"
+              }
+            ]
+          },
+          "Requesting Marks of Module 3": {
+            "name": "Marks Scored",
+            "restrictions": [
+              {
+                "cred_def_id": "JM9L6HL2QCexjbn9WB46h9:3:CL:2264793:Blockchain and SSI"
+              }
+            ]
+          },
+          "Requesting Marks of Module 4": {
+            "name": "Marks Scored",
+            "restrictions": [
+              {
+                "cred_def_id": "JM9L6HL2QCexjbn9WB46h9:3:CL:2264795:Privacy and Security in SSI"
+              }
+            ]
+          },
+          "Requesting Marks of Module 5": {
+            "name": "Marks Scored",
+            "restrictions": [
+              {
+                "cred_def_id": "JM9L6HL2QCexjbn9WB46h9:3:CL:2264797:Implementing SSI Solutions"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "connectionId": "60e634e7-b0cb-4fb0-ad2e-f572bbffe94d"
+  }
+]

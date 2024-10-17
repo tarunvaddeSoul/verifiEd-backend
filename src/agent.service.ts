@@ -116,8 +116,8 @@ export class AgentService {
       const agentLabel = `agent-${agentId}`;
       const walletId = `wallet-${agentId}`;
 
-      const endpoint = await connect(inboundPort);
-      // const endpoint = `${this.agentHost}${inboundPort}`;
+      // const endpoint = await connect(inboundPort);
+      const endpoint = `${this.agentHost}${inboundPort}`;
 
       const agentConfig = this.createAgentConfig(
         agentLabel,

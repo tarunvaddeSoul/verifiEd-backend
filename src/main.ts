@@ -23,7 +23,7 @@ async function bootstrap() {
   SwaggerModule.setup('api', app, document);
 
   // Start the server
-  await app.listen(3000);
+  await app.listen(process.env.NESTJS_PORT || '3001');
 }
 
 bootstrap();

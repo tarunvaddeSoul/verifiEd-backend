@@ -84,7 +84,7 @@ export class IssuanceService {
       const agent = (await this.getAgent()) as Agent;
 
       const credentialDefinition = await this.getCredentialDefinitionByTag(
-        'PHC Credential V2',
+        `${process.env.PHC_CREDENTIAL_DEFINITION_TAG}`,
       );
       const indyCredDefId = parseIndyCredentialDefinitionId(
         credentialDefinition.credentialDefinitionId,

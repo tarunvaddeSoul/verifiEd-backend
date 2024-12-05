@@ -112,7 +112,7 @@ export class IssuanceService {
               {
                 name: 'Issued By',
                 mimeType: 'text/plain',
-                value: 'VerifiEd',
+                value: 'SoulVerse',
               },
               {
                 name: 'Expiry',

@@ -171,6 +171,9 @@ export class AgentService {
   async createInvitation() {
     try {
       const createInvitationPayload = {
+        label: 'SoulVerse Agent',
+        imageUrl:
+          'https://soulverse.us/wp-content/uploads/2023/05/New-Logo_Special-Form-Mark-Filled-Color-17.png',
         autoAcceptConnection: true,
         multiUseInvitation: true,
       } as CreateOutOfBandInvitationConfig;
@@ -196,7 +199,9 @@ export class AgentService {
     try {
       const connectionRecord = await this.agent?.connections.getById(id);
       if (!connectionRecord) {
-        throw new NotFoundException(`Connection record with ID: ${id} not found`);
+        throw new NotFoundException(
+          `Connection record with ID: ${id} not found`,
+        );
       }
       return connectionRecord;
     } catch (error) {
